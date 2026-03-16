@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>抱抱粉底杯 · 内外橙标</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; font-size: 0; line-height: 0; }
+
+body {
+  font-family: 'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  background: #F0EBE3;
+  display: block;
+  padding: 40px 16px 60px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.phone {
+  width: 390px;
+  background: #FAF6F1;
+  border-radius: 48px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.18), 0 0 0 1px rgba(201,180,154,0.2);
+  border: 8px solid #2A1C14;
+  display: inline-block;
+  text-align: left;
+}
+
+/* reset */
+.phone * { font-size: 13px; line-height: normal; }
+
+/* notch */
+.notch {
+  background: #2A1C14;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notch-pill {
+  width: 80px; height: 9px;
+  background: #1A140E;
+  border-radius: 9px;
+}
+
+/* section dividers */
+.ol  { height: 0.5px; background: rgba(251,101,14,0.18); display: block; overflow: hidden; flex-shrink: 0; }
+.gap { height: 8px;   background: #FAF6F1; display: block; overflow: hidden; flex-shrink: 0; }
+
+/* nav bar inside phone */
+.phone-nav {
+  background: rgba(253,250,247,0.96);
+  backdrop-filter: blur(8px);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px solid rgba(251,101,14,0.12);
+}
+.phone-nav img {
+  height: 18px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  font-size: 0;
+}
+/* fallback if logo fails */
+.phone-nav .logo-fallback {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #9A8880;
+  font-family: 'Optima','Palatino Linotype',Georgia,serif;
+  display: none;
+}
+
+/* section header strip */
+.sec-strip {
+  background: #FAF6F1;
+  padding: 18px 20px 14px;
+}
+.sec-strip .eye {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #fb650e;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+}
+.sec-strip .ttl {
+  font-size: 18px;
+  font-weight: 300;
+  color: #3A2A1A;
+  line-height: 1.35;
+  font-family: 'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+}
+</style>
+</head>
+<body>
+<div class="phone">
+
+  <!-- notch -->
+  <div class="notch"><div class="notch-pill"></div></div>
+
+  <!-- phone nav -->
+  <div class="phone-nav" style="background:#fb650e;border-bottom:none;">
+    <span style="font-size:11px;letter-spacing:0.22em;color:#fff;font-family:'Optima','Palatino Linotype',Georgia,serif;">NEIWAI ORANGE · 内外橙标</span>
+  </div>
+
+  <!-- ══ 首屏 ══ -->
+  <div style="position:relative;height:520px;overflow:hidden;">
+    <img src="assets/hero-image-01.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block;">
+    <!-- text over image -->
+    <div style="position:absolute;bottom:0;left:0;right:0;height:42%;background:linear-gradient(to top,rgba(20,14,8,0.75) 0%,transparent 100%);padding:0 24px 28px;display:flex;flex-direction:column;justify-content:flex-end;z-index:2;">
+      <span style="font-size:10px;letter-spacing:0.28em;color:rgba(251,101,14,0.75);font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;margin-bottom:12px;display:block;text-transform:uppercase;">抱抱粉底杯文胸</span>
+      <div style="font-size:26px;color:#fff;line-height:1.5;margin-bottom:10px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;letter-spacing:0.02em;">贴合如底妆，<br>支撑如骨骼。</div>
+      <div style="height:1px;min-height:1px;background:#fb650e;width:28px;margin-bottom:10px;flex-shrink:0;"></div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.78);line-height:1.9;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">粉底般服帖，全天在原位<br>全贴合工艺，一体成型无边缘</div>
+    </div>
+  </div>
+  <div class="ol"></div>
+
+
+  <!-- ══ 01 全幅压字 ══ -->
+  <div style="position:relative;height:480px;overflow:hidden;">
+    <!-- 替换：<img src="assets/feat01.jpg" style="width:100%;height:480px;object-fit:cover;object-position:top;display:block;"> -->
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,#EDE8DF 0%,#D4BAA0 60%,#B89070 100%);display:flex;align-items:center;justify-content:center;">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="opacity:0.2"><circle cx="40" cy="40" r="30" stroke="#3D2B1F" stroke-width="1"/><path d="M22 40 Q22 26 40 24 Q58 26 58 40" stroke="#3D2B1F" stroke-width="1" fill="none"/></svg>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:45%;background:linear-gradient(to top,rgba(20,14,8,0.72) 0%,transparent 100%);padding:28px 24px;display:flex;flex-direction:column;justify-content:flex-end;z-index:2;">
+      <div style="font-size:9px;color:#fb650e;letter-spacing:0.32em;margin-bottom:8px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 1</div>
+      <div style="font-size:26px;color:#fff;line-height:1.35;margin-bottom:10px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">穿上，即消失</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85;margin-bottom:10px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">特调肤色，上身即融。无边缘，无存在感。</div>
+      <div style="width:22px;height:1px;min-height:1px;background:rgba(251,101,14,0.22);margin-bottom:10px;flex-shrink:0;"></div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">全贴合工艺 · 一体成型 · 零边缘感</div>
+    </div>
+  </div>
+  <div class="gap"></div>
+
+  <!-- ══ 科技板块 压图 ══ -->
+  <div style="position:relative;height:240px;overflow:hidden;">
+    <!-- 替换：<img src="assets/tech.jpg" …> -->
+    <div style="position:relative;z-index:0;width:100%;height:240px;background:#EDE3D6;display:flex;align-items:center;justify-content:center;">
+      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="opacity:0.2"><rect x="10" y="10" width="40" height="40" rx="20" stroke="#fb650e" stroke-width="1"/><rect x="20" y="20" width="20" height="20" rx="10" fill="#fb650e" opacity="0.35"/></svg>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:110px;z-index:2;background:linear-gradient(to top,rgba(240,228,215,0.96) 0%,transparent 100%);padding:12px 24px 18px;display:flex;flex-direction:column;justify-content:flex-end;">
+      <div style="font-size:9px;color:#fb650e;letter-spacing:0.36em;margin-bottom:8px;font-family:'Optima','Palatino Linotype',Georgia,serif;text-transform:uppercase;">R E e x t r a S k i n ®</div>
+      <div style="width:20px;height:1px;min-height:1px;background:#fb650e;opacity:0.35;margin-bottom:10px;flex-shrink:0;"></div>
+      <div style="font-size:13px;color:#2A1C10;line-height:1.8;margin-bottom:4px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">杯垫与里料曲面相合，循体而生。</div>
+      <div style="font-size:12px;color:#7A6050;line-height:1.7;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">形由内生，非附着而来。</div>
+    </div>
+  </div>
+  <div style="background:#EDE3D6;padding:4px 24px 12px;text-align:right;">
+    <span style="font-size:9px;color:rgba(251,101,14,0.5);font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">* 专利号：ZL 2017 2 1412023.9</span>
+  </div>
+  <div class="gap"></div>
+
+  <!-- ══ 02 文左图右 ══ -->
+  <div style="display:flex;overflow:hidden;min-height:240px;">
+    <div style="width:50%;flex-shrink:0;background:#FAF6F1;padding:22px 18px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:9px;color:#fb650e;letter-spacing:0.32em;margin-bottom:6px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 2</div>
+      <div style="font-size:16px;color:#3D2E26;line-height:1.4;margin-bottom:8px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">随形而动，<br>原位不变</div>
+      <div style="font-size:12px;color:#907870;line-height:1.7;margin-bottom:9px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">全贴合锁定，<br>拉伸弯腰，杯垫不移位。</div>
+      <div style="height:1px;min-height:1px;width:20px;background:#fb650e;margin-bottom:9px;flex-shrink:0;"></div>
+      <div style="font-size:11px;color:#A09088;line-height:1.6;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">REextraSkin® 专利<br>立体铸模工艺</div>
+    </div>
+    <div style="flex:1;overflow:hidden;position:relative;">
+      <!-- 替换：<img src="assets/feat02.jpg" style="width:100%;height:100%;object-fit:cover;display:block;"> -->
+      <div style="width:100%;height:100%;min-height:240px;background:linear-gradient(160deg,#E8DDD0,#C8A888);display:flex;align-items:center;justify-content:center;">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" style="opacity:0.2"><path d="M12 36 L25 12 L38 36" stroke="#3D2B1F" stroke-width="1" fill="none"/></svg>
+      </div>
+    </div>
+  </div>
+  <div class="gap"></div>
+
+  <!-- ══ 03 图左文右 ══ -->
+  <div style="display:flex;overflow:hidden;min-height:240px;">
+    <div style="width:50%;flex-shrink:0;overflow:hidden;position:relative;">
+      <!-- 替换：<img src="assets/feat03.jpg" style="width:190px;height:100%;object-fit:cover;display:block;"> -->
+      <div style="width:100%;height:100%;min-height:240px;background:linear-gradient(160deg,#F2ECE4,#DCCAB4);display:flex;align-items:center;justify-content:center;">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" style="opacity:0.2"><path d="M10 36 Q10 14 25 12 Q40 14 40 36" stroke="#3D2B1F" stroke-width="1" fill="none"/></svg>
+      </div>
+    </div>
+    <div style="flex:1;background:#FAF6F1;padding:22px 18px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:9px;color:#fb650e;letter-spacing:0.32em;margin-bottom:6px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 3</div>
+      <div style="font-size:16px;color:#3D2E26;line-height:1.4;margin-bottom:8px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">延展随形，<br>无知觉</div>
+      <div style="font-size:12px;color:#907870;line-height:1.7;margin-bottom:9px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">高弹云朵面料，<br>随动无勒，久穿无迹。</div>
+      <div style="height:1px;min-height:1px;width:20px;background:#fb650e;margin-bottom:9px;flex-shrink:0;"></div>
+      <div style="font-size:11px;color:#A09088;line-height:1.6;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">后背2倍延展<br>久穿不压迹</div>
+    </div>
+  </div>
+  <div class="gap"></div>
+
+  <!-- ══ 04 全幅压字 ══ -->
+  <div style="position:relative;height:460px;overflow:hidden;">
+    <!-- 替换：<img src="assets/feat04.jpg" style="width:100%;height:460px;object-fit:cover;display:block;"> -->
+    <div style="position:relative;z-index:0;width:100%;height:460px;background:linear-gradient(160deg,#F0EAE0 0%,#DCC8B4 55%,#987870 100%);display:flex;align-items:center;justify-content:center;z-index:0;">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="opacity:0.18"><path d="M40 14 Q52 26 52 44 Q52 58 40 64 Q28 58 28 44 Q28 26 40 14Z" stroke="#3D2B1F" stroke-width="1" fill="none"/></svg>
+    </div>
+    <!-- stat overlay top-right -->
+    <div style="position:absolute;top:24px;right:20px;text-align:right;z-index:2;">
+      <div style="font-size:11px;color:rgba(255,255,255,0.6);font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;line-height:1.5;">薄处仅</div>
+      <div style="font-size:28px;color:#fff;font-family:'Optima','Palatino Linotype',Georgia,serif;font-weight:400;line-height:1.1;">0.1<span style="font-size:14px;">cm</span></div>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:42%;background:linear-gradient(to top,rgba(20,14,8,0.72) 0%,transparent 100%);padding:28px 24px;display:flex;flex-direction:column;justify-content:flex-end;z-index:2;">
+      <div style="font-size:9px;color:#fb650e;letter-spacing:0.32em;margin-bottom:8px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 4</div>
+      <div style="font-size:26px;color:#fff;line-height:1.35;margin-bottom:10px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">久穿，<br>呼吸如常</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85;margin-bottom:10px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">树叶型透气孔散热，全天干爽。</div>
+      <div style="width:22px;height:1px;min-height:1px;background:rgba(251,101,14,0.22);margin-bottom:10px;flex-shrink:0;"></div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">升级液体发泡杯 · 树叶型透气孔 · 科技消臭纱线</div>
+    </div>
+  </div>
+  <div class="gap"></div>
+
+  <!-- ══ 05 图左文右 ══ -->
+  <div style="display:flex;overflow:hidden;min-height:240px;">
+    <div style="width:50%;flex-shrink:0;overflow:hidden;position:relative;">
+      <!-- 替换：<img src="assets/feat05.jpg" …> -->
+      <div style="width:100%;height:100%;min-height:240px;background:linear-gradient(160deg,#7A5038,#4A2E18);display:flex;align-items:center;justify-content:center;">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" style="opacity:0.25"><rect x="12" y="12" width="26" height="26" rx="4" stroke="#fb650e" stroke-width="1"/><path d="M18 25 L23 30 L32 20" stroke="#fb650e" stroke-width="1" stroke-linecap="round" fill="none"/></svg>
+      </div>
+      <!-- stat overlay -->
+      <div style="position:absolute;bottom:14px;left:14px;z-index:2;">
+        <div style="font-size:9px;color:rgba(201,180,154,0.7);font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">达国标</div>
+        <div style="font-size:22px;color:#fb650e;font-family:'Optima','Palatino Linotype',Georgia,serif;font-weight:400;line-height:1;">1.3<span style="font-size:13px;">倍</span></div>
+      </div>
+    </div>
+    <div style="flex:1;background:#FAF6F1;padding:22px 18px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:9px;color:#fb650e;letter-spacing:0.32em;margin-bottom:6px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 5</div>
+      <div style="font-size:16px;color:#3D2E26;line-height:1.45;margin-bottom:8px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">百洗之后，<br>形态如旧</div>
+      <div style="font-size:12px;color:#907870;line-height:1.7;margin-bottom:9px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">版型与颜色不因<br>水洗而改变。</div>
+      <div style="height:1px;min-height:1px;width:20px;background:#fb650e;margin-bottom:9px;flex-shrink:0;"></div>
+      <div style="font-size:11px;color:#A09088;line-height:1.6;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">抗起球 · 抗掉色<br>耐洗不变形</div>
+    </div>
+  </div>
+  <div class="gap"></div>
+
+  <!-- ══ 上身效果 ══ -->
+  <div class="sec-strip">
+    <span class="eye">上身效果</span>
+    <div class="ttl">贴合你的身体</div>
+  </div>
+  <div class="ol"></div>
+  <!-- 3张上身图占位，替换 src -->
+  <div style="overflow:hidden;height:460px;background:linear-gradient(160deg,#F2ECE4,#DCCAB4);display:flex;align-items:center;justify-content:center;">
+    <span style="font-size:11px;letter-spacing:0.14em;color:rgba(61,43,31,0.4);font-family:'Optima','Palatino Linotype',Georgia,serif;">上身图 1</span>
+  </div>
+  <div class="ol"></div>
+  <div style="overflow:hidden;height:460px;background:linear-gradient(160deg,#E8DDD0,#C8A888);display:flex;align-items:center;justify-content:center;">
+    <span style="font-size:11px;letter-spacing:0.14em;color:rgba(245,240,232,0.5);font-family:'Optima','Palatino Linotype',Georgia,serif;">上身图 2</span>
+  </div>
+  <div class="ol"></div>
+  <div style="overflow:hidden;height:460px;background:linear-gradient(160deg,#C09878,#6A4030);display:flex;align-items:center;justify-content:center;">
+    <span style="font-size:11px;letter-spacing:0.14em;color:rgba(201,180,154,0.5);font-family:'Optima','Palatino Linotype',Georgia,serif;">上身图 3</span>
+  </div>
+  <div class="ol"></div>
+
+  <!-- ══ 两种款式 ══ -->
+  <div class="sec-strip">
+    <span class="eye">两种款式</span>
+    <div class="ttl">选择适合你的版本</div>
+  </div>
+  <div class="ol"></div>
+  <div style="display:flex;gap:1px;background:rgba(251,101,14,0.22);">
+    <div style="flex:1;background:#FAF6F1;padding:24px 18px;">
+      <svg width="44" height="28" viewBox="0 0 44 28" fill="none" style="display:block;margin-bottom:10px"><path d="M3 19 Q3 5 22 3 Q41 5 41 19 L43 26 Q43 28 39 28 L5 28 Q1 28 1 26 Z" fill="#EAE2D8"/><path d="M12 3 Q12 0 22 0 Q32 0 32 3" stroke="#fb650e" stroke-width="0.8" fill="none"/></svg>
+      <div style="font-size:9px;letter-spacing:0.22em;color:#A09088;text-transform:uppercase;margin-bottom:5px;font-family:'Optima','Palatino Linotype',Georgia,serif;">Style A</div>
+      <div style="font-size:14px;color:#2C1F17;margin-bottom:6px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">无痕背心款</div>
+      <div style="font-size:11px;color:#A09088;line-height:1.8;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">无背扣，套头穿着<br>背部完全零压迹</div>
+    </div>
+    <div style="flex:1;background:#FAF6F1;padding:24px 18px;">
+      <svg width="44" height="28" viewBox="0 0 44 28" fill="none" style="display:block;margin-bottom:10px"><path d="M3 19 Q3 5 22 3 Q41 5 41 19 L43 26 Q43 28 39 28 L5 28 Q1 28 1 26 Z" fill="#EAE2D8"/><path d="M12 3 Q12 0 22 0 Q32 0 32 3" stroke="#fb650e" stroke-width="0.8" fill="none"/><rect x="34" y="14" width="6" height="2.5" rx="0.8" fill="#fb650e"/><rect x="34" y="18.5" width="6" height="2.5" rx="0.8" fill="#fb650e"/></svg>
+      <div style="font-size:9px;letter-spacing:0.22em;color:#A09088;text-transform:uppercase;margin-bottom:5px;font-family:'Optima','Palatino Linotype',Georgia,serif;">Style B</div>
+      <div style="font-size:14px;color:#2C1F17;margin-bottom:6px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">方便背扣款</div>
+      <div style="font-size:11px;color:#A09088;line-height:1.8;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">后背扣合，穿脱便捷<br>可精准调整松紧</div>
+    </div>
+  </div>
+  <div class="ol"></div>
+
+  <!-- ══ 颜色选择 ══ -->
+  <div class="sec-strip">
+    <span class="eye">身体底色</span>
+    <div class="ttl">挑选适配的每一面</div>
+  </div>
+  <div class="ol"></div>
+
+  <!-- ══ 颜色展示 — 全色列表 ══ -->
+  <div style="background:#FAF6F1;padding:20px 20px 28px;">
+
+    <!-- 色块横排预览 -->
+    <div style="display:flex;gap:0;margin-bottom:20px;border-radius:6px;overflow:hidden;height:36px;">
+      <div style="flex:1;background:#DEC9B4;"></div>
+      <div style="flex:1;background:#C89060;"></div>
+      <div style="flex:1;background:#BEB0C4;"></div>
+      <div style="flex:1;background:#4A2C1E;"></div>
+      <div style="flex:1;background:#1C1C1C;"></div>
+      <div style="flex:1;background:#8A7260;"></div>
+      <div style="flex:1;background:#D4DDB8;"></div>
+    </div>
+
+    <!-- 颜色列表 -->
+    <div style="display:flex;flex-direction:column;gap:0;">
+
+      <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">
+        <div style="width:36px;height:36px;border-radius:50%;background:#DEC9B4;flex-shrink:0;"></div>
+        <div style="flex:1;">
+          <div style="font-size:13px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">自在裸</div>
+          <div style="font-size:10px;color:#A09088;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">日常隐形 · 亚洲肤色专属调色</div>
+        </div>
+        <div style="font-size:9px;color:#A09088;font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">背心 · 背扣</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">
+        <div style="width:36px;height:36px;border-radius:50%;background:#C89060;flex-shrink:0;"></div>
+        <div style="flex:1;">
+          <div style="font-size:13px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">活力肤</div>
+          <div style="font-size:10px;color:#A09088;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">暖意沉静 · 小麦肤色自然相融</div>
+        </div>
+        <div style="font-size:9px;color:#A09088;font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">背心 · 背扣</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">
+        <div style="width:36px;height:36px;border-radius:50%;background:#BEB0C4;flex-shrink:0;"></div>
+        <div style="flex:1;">
+          <div style="font-size:13px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">治愈紫</div>
+          <div style="font-size:10px;color:#A09088;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">克制温柔 · 日常穿搭低调点睛</div>
+        </div>
+        <div style="font-size:9px;color:#A09088;font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">背心 · 背扣</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">
+        <div style="width:36px;height:36px;border-radius:50%;background:#4A2C1E;flex-shrink:0;"></div>
+        <div style="flex:1;">
+          <div style="font-size:13px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">温暖棕</div>
+          <div style="font-size:10px;color:#A09088;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">沉稳内敛 · 秋冬层叠穿搭首选</div>
+        </div>
+        <div style="font-size:9px;color:#A09088;font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">背心 · 背扣</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">
+        <div style="width:36px;height:36px;border-radius:50%;background:#1C1C1C;flex-shrink:0;"></div>
+        <div style="flex:1;">
+          <div style="font-size:13px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">沉稳黑</div>
+          <div style="font-size:10px;color:#A09088;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">干净利落 · 深色系穿搭无负担</div>
+        </div>
+        <div style="font-size:9px;color:#A09088;font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">背心 · 背扣</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">
+        <div style="width:36px;height:36px;border-radius:50%;background:#8A7260;flex-shrink:0;"></div>
+        <div style="flex:1;">
+          <div style="font-size:13px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">拿铁棕</div>
+          <div style="font-size:10px;color:#A09088;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">裸与棕之间 · 过渡肤色自然贴合</div>
+        </div>
+        <div style="font-size:9px;color:#A09088;font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">背心 · 背扣</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;padding:12px 0;">
+        <div style="width:36px;height:36px;border-radius:50%;background:#D4DDB8;flex-shrink:0;"></div>
+        <div style="flex:1;">
+          <div style="font-size:13px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:2px;">芦笋绿</div>
+          <div style="font-size:10px;color:#A09088;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">清醒克制 · 春夏植物系轻盈感</div>
+        </div>
+        <div style="font-size:9px;color:#fb650e;font-family:'Optima','Palatino Linotype',Georgia,serif;letter-spacing:0.06em;">背心款专属</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ol"></div>
+
+  <!-- ══ 尺码 ══ -->
+  <div class="sec-strip">
+    <span class="eye">尺码指南</span>
+    <div class="ttl">找到你的尺码</div>
+  </div>
+  <div style="background:#FAF6F1;padding:0 20px 28px;">
+
+    <!-- step 01 -->
+    <div style="padding-top:20px;margin-bottom:16px;">
+      <div style="font-size:9px;letter-spacing:0.26em;color:#fb650e;text-transform:uppercase;margin-bottom:6px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 1</div><div style="font-size:15px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:12px;">测量上下胸围</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div style="background:rgba(251,101,14,0.06);border:0.5px solid rgba(251,101,14,0.18);padding:14px 10px;text-align:center;">
+          <div style="font-size:10px;letter-spacing:0.1em;color:#A09088;margin-bottom:6px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">上胸围</div>
+          <div style="font-size:11px;color:#907870;line-height:1.7;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">胸部最丰满处<br>前倾45°绕一圈</div>
+        </div>
+        <div style="background:rgba(251,101,14,0.06);border:0.5px solid rgba(251,101,14,0.18);padding:14px 10px;text-align:center;">
+          <div style="font-size:10px;letter-spacing:0.1em;color:#A09088;margin-bottom:6px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">下胸围</div>
+          <div style="font-size:11px;color:#907870;line-height:1.7;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">乳房根部下方<br>挺直绕一圈</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- step 02 罩杯 -->
+    <div style="margin-bottom:16px;">
+      <div style="font-size:9px;letter-spacing:0.26em;color:#fb650e;text-transform:uppercase;margin-bottom:6px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 2</div><div style="font-size:15px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:12px;">确定罩杯</div>
+      <table style="width:100%;border-collapse:collapse;table-layout:fixed;">
+        <thead style="background:rgba(251,101,14,0.05);">
+          <tr>
+            <td style="font-size:10px;color:#A09088;text-align:left;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.15);">上围−下围</td>
+            <td style="font-size:11px;font-weight:400;color:#3A2A1A;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.15);">A</td>
+            <td style="font-size:11px;font-weight:400;color:#3A2A1A;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.15);">B</td>
+            <td style="font-size:11px;font-weight:400;color:#3A2A1A;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.15);">C</td>
+            <td style="font-size:11px;font-weight:400;color:#3A2A1A;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.15);">D</td>
+            <td style="font-size:11px;font-weight:400;color:#3A2A1A;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.15);">E</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="font-size:10px;color:#A09088;text-align:left;padding:9px 0 9px 10px;">差值 cm</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;">7.5–10</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;">10–12.5</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;">12.5–15</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;">15–17.5</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;">17.5–20</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:9px;color:#fb650e;margin-top:8px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">* 例：上胸围 90cm − 下胸围 81cm = 9cm，对应 A 罩杯</div>
+    </div>
+
+    <!-- step 03 尺码表 -->
+    <div>
+      <div style="font-size:9px;letter-spacing:0.26em;color:#fb650e;text-transform:uppercase;margin-bottom:6px;font-family:'Optima','Palatino Linotype',Georgia,serif;">0 3</div><div style="font-size:15px;color:#2A1C10;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;margin-bottom:12px;">选择你的尺码</div>
+      <table style="width:100%;border-collapse:collapse;table-layout:fixed;">
+        <thead style="background:rgba(251,101,14,0.05);">
+          <tr>
+            <td style="font-size:10px;color:#A09088;text-align:left;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.15);"></td>
+            <td style="font-size:11px;font-weight:400;color:#3A2A1A;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.15);">S–M</td>
+            <td style="font-size:11px;font-weight:400;color:#3A2A1A;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.15);">L–XL</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="font-size:10px;color:#A09088;text-align:left;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.1);">建议身高</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">163–167</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">167–172</td></tr>
+          <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;text-align:left;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.1);">建议胸围</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">80–89</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">90–100</td></tr>
+          <tr><td style="font-size:10px;color:#A09088;text-align:left;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.1);">建议下胸围</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">73–77</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;border-bottom:0.5px solid rgba(251,101,14,0.1);">78–87</td></tr>
+          <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;text-align:left;padding:9px 0 9px 10px;line-height:1.5;">日常文胸<br><span style="font-size:9px;color:#b8aba4;">仅供参考</span></td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;line-height:1.8;">70A 75A<br>70B 75B<br>70C 75C</td><td style="font-size:10px;color:#6A5040;font-weight:300;text-align:center;padding:9px 0;line-height:1.8;">80A 85A<br>80B 85B<br>80C 85C</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:9px;color:#fb650e;margin-top:8px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">* 丰胸体型建议大一码</div>
+    </div>
+  </div>
+  <div class="ol"></div>
+
+  <!-- ══ 基础信息 ══ -->
+  <div class="sec-strip">
+    <span class="eye">产品详情</span>
+    <div class="ttl">基础信息</div>
+  </div>
+  <div style="background:#FAF6F1;padding:4px 20px 8px;">
+    <div style="font-size:10px;color:#fb650e;letter-spacing:0.1em;padding:14px 0 8px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">背心款</div>
+    <table style="width:100%;border-collapse:collapse;">
+      <tr><td style="font-size:10px;color:#A09088;width:36%;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">产品名称</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">抱抱粉底杯文胸 背心款</td></tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">面料</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">67% 锦纶 · 33% 氨纶</td></tr>
+      <tr><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">罩杯里料</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">86% 聚酯纤维 · 14% 氨纶</td></tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">背扣</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">无背扣 · 套头款</td></tr>
+      <tr><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">肩带</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">可调节 · 不可脱卸</td></tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">杯垫</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">固定杯</td></tr>
+      <tr><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);vertical-align:middle;">杯垫厚度</td>
+        <td style="padding:0;border-bottom:0.5px solid rgba(251,101,14,0.12);">
+          <div style="display:flex;align-items:center;">
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 4px;"><span style="font-size:10px;color:#A09088;">薄杯 ✓</span><span style="font-size:9px;color:#fb650e;">2–5.5mm</span></div>
+            <div style="width:0.5px;height:38px;background:rgba(251,101,14,0.15);"></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 4px;"><span style="font-size:10px;color:#b8aba4;">中厚杯</span><span style="font-size:9px;color:#b8aba4;">6–10mm</span></div>
+            <div style="width:0.5px;height:38px;background:rgba(251,101,14,0.15);"></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 4px;"><span style="font-size:10px;color:#b8aba4;">厚杯</span><span style="font-size:9px;color:#b8aba4;">11–20mm</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;">尺码</td><td style="font-size:11px;color:#5A4A40;padding:9px 0 9px 10px;font-weight:300;">S–M · L–XL</td></tr>
+    </table>
+
+    <div style="font-size:10px;color:#fb650e;letter-spacing:0.1em;padding:18px 0 8px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;">背扣款</div>
+    <table style="width:100%;border-collapse:collapse;">
+      <tr><td style="font-size:10px;color:#A09088;width:36%;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">产品名称</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">抱抱粉底杯文胸 背扣款</td></tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">面料</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">68% 锦纶 · 32% 氨纶</td></tr>
+      <tr><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">罩杯里料</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">86% 聚酯纤维 · 14% 氨纶</td></tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">背扣</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">S–M：2行4列 · L–XL：3行4列</td></tr>
+      <tr><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">肩带</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">可调节 · 不可脱卸</td></tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">杯垫</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">固定杯</td></tr>
+      <tr><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">杯垫厚度</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">薄处 1mm · 厚处 5mm</td></tr>
+      <tr style="background:rgba(251,101,14,0.04);"><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);">尺码</td><td style="font-size:10px;color:#6A5040;font-weight:300;padding:9px 0 9px 10px;border-bottom:0.5px solid rgba(251,101,14,0.12);font-weight:300;">S–M · L–XL</td></tr>
+      <tr><td style="font-size:10px;color:#A09088;padding:9px 0 9px 10px;">产地</td><td style="font-size:11px;color:#5A4A40;padding:9px 0 9px 10px;font-weight:300;">中国</td></tr>
+    </table>
+  </div>
+  <div class="ol"></div>
+
+  <!-- ══ 页面注释 ══ -->
+  <div style="padding:18px 20px 32px;background:#FAF6F1;">
+    <div style="font-size:9px;letter-spacing:0.2em;color:#A09088;margin-bottom:12px;font-family:'Optima','Palatino Linotype',Georgia,serif;text-transform:uppercase;">页面注释</div>
+    <div style="font-size:10px;color:#A09088;line-height:2;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">1. <span style="color:#fb650e;">「消臭」</span>性能符合 GB/T 20944.3–2008 国内检测标准</div>
+    <div style="font-size:10px;color:#A09088;line-height:1.7;padding-left:1em;margin-bottom:4px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">（消臭异味指醋酸和氨气）</div>
+    <div style="font-size:10px;color:#A09088;line-height:2;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">2. <span style="color:#fb650e;">「透气性」</span>性能符合 GB/T 5453–1997 检测标准</div>
+    <div style="font-size:10px;color:#A09088;line-height:2;margin-top:4px;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">* 专利号：ZL 2017 2 1412023.9</div>
+    <div style="margin-top:20px;font-size:9px;letter-spacing:0.22em;color:#fb650e;font-family:'Optima','Palatino Linotype',Georgia,serif;">NEIWAI ORANGE · 内外橙标</div>
+  </div>
+
+  <div class="ol"></div>
+
+  <!-- ══ 品牌概念 ══ -->
+  <div style="background:#EFE5D8;padding:52px 28px 56px;text-align:center;">
+    <div style="font-size:9px;letter-spacing:0.34em;color:#fb650e;text-transform:uppercase;margin-bottom:18px;font-family:'Optima','Palatino Linotype',Georgia,serif;">身体底装</div>
+    <div style="font-size:20px;color:#2A1C10;line-height:1.85;margin-bottom:16px;font-family:'OPPOSans','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:300;letter-spacing:0.04em;">身体知道，底色自现</div>
+    <div style="height:1px;min-height:1px;background:#fb650e;width:24px;margin:0 auto 16px;flex-shrink:0;"></div>
+    <div style="font-size:12px;color:#7A6050;line-height:2.2;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">内外橙标提出「身体底装」概念<br>将贴身衣物升级为贴合情绪与状态的底层穿着<br>为女性提供自在且有力的日常陪伴</div>
+  </div>
+  <!-- 氛围图：纯色区延伸后接图片 -->
+  <div style="width:100%;aspect-ratio:1/1;overflow:hidden;">
+    <img src="assets/mood-01.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+  </div>
+  <div class="ol"></div>
+
+  <!-- ══ 品牌介绍 ══ -->
+  <div style="background:#fff;padding:40px 24px 48px;">
+
+    <!-- logo区域 -->
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:32px;">
+      <img src="assets/orange-logo.jpg" alt="内外橙标"
+           style="height:52px;width:auto;object-fit:contain;display:block;"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <!-- svg fallback logo -->
+      <div style="display:none;align-items:center;gap:10px;">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="10" fill="#E8600A" opacity="0.15"/>
+          <circle cx="24" cy="24" r="5" fill="#E8600A"/>
+          <g stroke="#E8600A" stroke-width="2" stroke-linecap="round">
+            <line x1="24" y1="4"  x2="20" y2="11"/>
+            <line x1="24" y1="4"  x2="28" y2="11"/>
+            <line x1="4"  y1="24" x2="11" y2="20"/>
+            <line x1="4"  y1="24" x2="11" y2="28"/>
+            <line x1="44" y1="24" x2="37" y2="20"/>
+            <line x1="44" y1="24" x2="37" y2="28"/>
+            <line x1="24" y1="44" x2="20" y2="37"/>
+            <line x1="24" y1="44" x2="28" y2="37"/>
+            <line x1="9"  y1="9"  x2="14" y2="14"/>
+            <line x1="39" y1="9"  x2="34" y2="14"/>
+            <line x1="9"  y1="39" x2="14" y2="34"/>
+            <line x1="39" y1="39" x2="34" y2="34"/>
+          </g>
+        </svg>
+        <div>
+          <div style="font-size:16px;font-weight:700;color:#E8600A;line-height:1.2;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">NEIWAI</div>
+          <div style="font-size:13px;font-weight:700;color:#E8600A;line-height:1.2;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">内外橙标</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 分隔线 -->
+    <div style="height:2px;min-height:2px;background:#E8600A;margin-bottom:28px;flex-shrink:0;"></div>
+
+    <!-- 品牌文案 -->
+    <div style="font-size:13px;color:#1c1c1c;line-height:2.1;font-family:'OPPOSans','PingFang SC',sans-serif;font-weight:300;">
+      <div style="margin-bottom:4px;">NEIWAIOrange 内外橙标</div>
+      <div style="margin-bottom:16px;">诞生于 2023 年。</div>
+      <div style="margin-bottom:4px;">我们把衣服做得简单，把感受留给身体。</div>
+      <div style="margin-bottom:4px;">好穿、好搭、不费力，却始终有点意思。</div>
+      <div style="margin-bottom:4px;">属于愿意认真感受生活的人——</div>
+      <div style="margin-bottom:4px;">自在、热烈，不被定义，</div>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;">
+        <div>在舒服之上，保留想象力。</div>
+        <div style="font-size:22px;color:#E8600A;line-height:1;padding-bottom:2px;font-family:'Optima','Palatino Linotype',Georgia,serif;">:)</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
